@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  personId = 10;
+  personName = 'Jhon';
+  btnProperty = false;
+
+  constructor() { 
+    setTimeout(() => {
+      this.btnProperty = true;
+    }, 2000);
+  }
 
   ngOnInit() {
   }
