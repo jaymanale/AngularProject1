@@ -31,10 +31,7 @@ export class BodyComponent implements OnInit {
   }
   addUser() {
     this.userNameSuccess = true;
-    this.userArray.push({
-      id: Math.random(),
-      userName: this.userName
-    });
+    this.userArray.push(this.userName);
     this.userName = '';
     console.log(this.userArray);
   }
